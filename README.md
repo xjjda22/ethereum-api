@@ -53,7 +53,7 @@ docker run -p 8080:8080 es6/api-service
 ethereum api
 ------
 ```sh
-1 cd express-es6-rest-api
+1- cd express-es6-rest-api
 2- rm -rf .git && git init && npm init
 3- npm install
 4- PORT=8080 npm run dev
