@@ -50,9 +50,31 @@ docker run -p 8080:8080 es6/api-service
 #          machine port   
 
 ```
+ethereum api
+------
+```sh
+1 cd express-es6-rest-api
+2- rm -rf .git && git init && npm init
+3- npm install
+4- PORT=8080 npm run dev
 
+use postman to test these api
+create bip39 wallet for ethereum 
+http://localhost:8080/createWallet/44'/60/0
+
+get balance from rinkeby network
+http://localhost:8080/getBalance/0x00ac8fbedd57107adbbb8a23d56cbf791bf0093e
+
+transfer etherum on rinkeby network
+http://localhost:8080/transaction
+{
+	"privatekey":"pk", 
+	"destination":"0x00ac8fbedd57107adbbb8a23d56cbf791bf0093e", 
+	"amount":"0.02",
+	"send":true//true or false
+}
+```
 License
 -------
 
 MIT
-# ethereum-api
