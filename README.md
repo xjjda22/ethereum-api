@@ -79,6 +79,10 @@ http://localhost:8080/transaction
 
 >>>>>>> 944be4a... version 1.03
 License
+<<<<<<< HEAD
 -------
+=======
+------
+>>>>>>> 1e07683... version 1.06
 
 MIT
