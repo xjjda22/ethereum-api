@@ -50,7 +50,7 @@ docker run -p 8080:8080 es6/api-service
 #          machine port   
 
 ```
-<<<<<<< HEAD
+
 ethereum api
 ------
 ```sh
@@ -75,14 +75,6 @@ http://localhost:8080/transaction
 	"send":true//true or false
 }
 ```
-=======
 
->>>>>>> 944be4a... version 1.03
 License
-<<<<<<< HEAD
--------
-=======
-------
->>>>>>> 1e07683... version 1.06
-
 MIT
