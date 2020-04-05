@@ -63,16 +63,39 @@ use postman to test these api
 create bip39 wallet for ethereum 
 http://localhost:8080/createWallet/44'/60/0
 
-get balance from rinkeby network
-http://localhost:8080/getBalance/0x00ac8fbedd57107adbbb8a23d56cbf791bf0093e
+case: create ether wallet on rinkeby network
+method: post
+endpoint: http://localhost:8080/createWallet
+body: {
+}
+response:{
+	"mnemonic":"",
+	"address":"",
+	"privatekey":""
+}
 
-transfer etherum on rinkeby network
-http://localhost:8080/transaction
-{
-	"privatekey":"pk", 
+case: get balance from rinkeby network
+method: get
+endpoint: http://localhost:8080/getBalance/0x00ac8fbedd57107adbbb8a23d56cbf791bf0093e
+body: {
+}
+response:{
+	"balance":""
+}
+
+case: transfer etherum on rinkeby network
+method: post
+endpoint: http://localhost:8080/transaction
+body: {
+	"privatekey":"0x00***pk***", 
 	"destination":"0x00ac8fbedd57107adbbb8a23d56cbf791bf0093e", 
 	"amount":"0.02",
 	"send":true//true or false
+}
+response:{
+	"gasPrices":"",
+	"transactionId":"",
+	"transactionUrl":""
 }
 ```
 
