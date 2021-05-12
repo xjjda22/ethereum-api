@@ -10,8 +10,6 @@ This is a straightforward boilerplate for building REST APIs with ES6 and Expres
 
 > Tip: If you are using [Mongoose](https://github.com/Automattic/mongoose), you can automatically expose your Models as REST resources using [restful-mongoose](https://git.io/restful-mongoose).
 
-
-
 Getting Started
 ---------------
 
@@ -32,6 +30,7 @@ PORT=8080 npm run dev
 # Start production server:
 PORT=8080 npm start
 ```
+
 Docker Support
 ------
 ```sh
